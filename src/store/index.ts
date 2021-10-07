@@ -1,7 +1,17 @@
-import { createStore, Store, MutationTree } from 'vuex';
-
-import state from './state';
-import mutations from './state';
-export const store = createStore({
-  state,
+import { createStore } from "vuex";
+const store = createStore({
+  state() {
+    return {
+      theme: false,
+    };
+  },
+  mutations: {
+    changeTheme(state, payload) {
+      console.log(payload);
+      state.theme = payload;
+      console.log(state)
+    },
+  },
 });
+
+export default store;

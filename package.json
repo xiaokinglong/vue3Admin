@@ -7,9 +7,17 @@
     "serve": "vite preview"
   },
   "dependencies": {
-    "ant-design-vue": "^2.2.8",
+    "autoprefixer": "^10.3.6",
     "less": "^4.1.1",
     "less-loader": "^10.0.1",
+    "naive-ui": "^2.19.1",
+    "postcss": "^8.3.8",
+    "three": "0.127",
+    "troisjs": "^0.3.2",
+    "vfonts": "^0.1.0",
+    "vite-plugin-components": "^0.13.3",
+    "vite-plugin-style-import": "^1.2.1",
+    "vite-plugin-tips": "^1.0.2",
     "vue": "^3.0.5",
     "vue-router": "4",
     "vuex": "^4.0.2"
@@ -17,8 +25,16 @@
   "devDependencies": {
     "@vitejs/plugin-vue": "^1.3.0",
     "@vue/compiler-sfc": "^3.0.5",
+    "rollup-plugin-analyzer": "^4.0.0",
+    "rollup-plugin-visualizer": "^5.5.2",
     "typescript": "^4.3.2",
+    "view-launcher": "^1.1.7",
     "vite": "^2.4.4",
+    "vite-plugin-cdn-import": "^0.3.5",
+    "vite-plugin-compression": "^0.3.5",
+    "vite-plugin-restart": "^0.0.2",
+    "vite-plugin-theme": "^0.8.1",
+    "vite-plugin-vconsole": "^1.1.0",
     "vue-tsc": "^0.2.2"
   }
 }
