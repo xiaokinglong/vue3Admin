@@ -13,26 +13,27 @@
     </n-layout-sider>
     <n-layout>
       <n-layout-header>
-        <n-switch v-model:value="state.theme" @update:value="handleThemeChange" />
+        <div class="header-box">
+          <User />
+          <Theme />
+        </div>
       </n-layout-header>
-      <n-layout-content content-style="padding: 24px;">平山道</n-layout-content>
+      <n-layout-content content-style="padding: 24px;">
+        <router-view></router-view>
+      </n-layout-content>
     </n-layout>
   </n-layout>
 </template>
 <script lang="ts" setup>
-import { NLayout, NLayoutContent, NSwitch, NLayoutHeader, NLayoutSider } from 'naive-ui';
+import { NLayout, NLayoutContent, NLayoutHeader, NLayoutSider } from 'naive-ui';
 import Logo from '../components/Logo.vue';
 import Menus from '../components/Menus.vue';
-import { useStore } from 'vuex';
-const { state, commit } = useStore();
-// const { state, commit } = useStore();
-
+import Theme from '../components/theme.vue';
+import User from '../components/user.vue';
 const toggleCollapsed = (collapsed: boolean) => {
   console.log(collapsed)
 }
-const handleThemeChange = (value: boolean) => {
-  commit('changeTheme', value)
-}
+
 </script>
 
 <style lang="less">
@@ -45,9 +46,14 @@ const handleThemeChange = (value: boolean) => {
       background-color: red;
     }
   }
+  .header-box {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+  }
 }
 .n-layout-header,
 .n-layout-footer {
-  padding: 24px;
+  padding: 7px 0px;
 }
 </style>

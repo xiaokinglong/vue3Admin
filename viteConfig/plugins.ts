@@ -35,11 +35,9 @@ const plugins = [
     // Match the color to be modified
     colorVariables: [],
   }),
-  
 ];
 
-if (process.env.NODE_ENV !== 'development') {
-  console.log('ceshi')
-  // plugins.push(viteTips());
+if (process.env.NODE_ENV !== "development") {
+  console.log("ceshi");
 }
 export default plugins;
