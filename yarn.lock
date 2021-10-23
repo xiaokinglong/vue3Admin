@@ -347,6 +347,30 @@
   resolved "https://registry.nlark.com/@vue/shared/download/@vue/shared-3.2.12.tgz#304064a4b56fc6c7b9169d80e9ee62ecb4bf0a1c"
   integrity sha1-MEBkpLVvxse5Fp2A6e5i7LS/Chw=
 
+"@vueuse/core@^6.5.3", "@vueuse/core@^6.7.3":
+  version "6.7.3"
+  resolved "https://registry.npmmirror.com/@vueuse/core/download/@vueuse/core-6.7.3.tgz#1a827ee3be55a98c932f716467337a0826d54993"
+  integrity sha1-GoJ+475VqYyTL3FkZzN6CCbVSZM=
+  dependencies:
+    "@vueuse/shared" "6.7.3"
+    vue-demi "*"
+
+"@vueuse/motion@^2.0.0-beta.4":
+  version "2.0.0-beta.4"
+  resolved "https://registry.npmmirror.com/@vueuse/motion/download/@vueuse/motion-2.0.0-beta.4.tgz#08f9a151f29bc1539316c49000c67efea194498d"
+  integrity sha1-CPmhUfKbwVOTFsSQAMZ+/qGUSY0=
+  dependencies:
+    "@vueuse/core" "^6.5.3"
+    popmotion "^10.0.1"
+    vue-demi "*"
+
+"@vueuse/shared@6.7.3":
+  version "6.7.3"
+  resolved "https://registry.npmmirror.com/@vueuse/shared/download/@vueuse/shared-6.7.3.tgz#92ed69b3e79e1a30936fc1f1d39a0107e8d522e0"
+  integrity sha1-ku1ps+eeGjCTb8Hx05oBB+jVIuA=
+  dependencies:
+    vue-demi "*"
+
 acorn@^7.1.1:
   version "7.4.1"
   resolved "https://registry.nlark.com/acorn/download/acorn-7.4.1.tgz?cache=0&sync_timestamp=1630916517167&other_urls=https%3A%2F%2Fregistry.nlark.com%2Facorn%2Fdownload%2Facorn-7.4.1.tgz#feaed255973d2e77555b83dbc08851a6c63520fa"
@@ -772,6 +796,13 @@ fraction.js@^4.1.1:
   resolved "https://registry.nlark.com/fraction.js/download/fraction.js-4.1.1.tgz#ac4e520473dae67012d618aab91eda09bcb400ff"
   integrity sha1-rE5SBHPa5nAS1hiquR7aCby0AP8=
 
+framesync@6.0.0:
+  version "6.0.0"
+  resolved "https://registry.npmmirror.com/framesync/download/framesync-6.0.0.tgz#e6ad8ec128d33291a03cc34e58365c41265a1dae"
+  integrity sha1-5q2OwSjTMpGgPMNOWDZcQSZaHa4=
+  dependencies:
+    tslib "^2.1.0"
+
 fs-extra@^10.0.0:
   version "10.0.0"
   resolved "https://registry.nlark.com/fs-extra/download/fs-extra-10.0.0.tgz#9ff61b655dde53fb34a82df84bb214ce802e17c1"
@@ -860,6 +891,11 @@ header-case@^2.0.4:
   dependencies:
     capital-case "^1.0.4"
     tslib "^2.0.3"
+
+hey-listen@^1.0.8:
+  version "1.0.8"
+  resolved "https://registry.npm.taobao.org/hey-listen/download/hey-listen-1.0.8.tgz#8e59561ff724908de1aa924ed6ecc84a56a9aa68"
+  integrity sha1-jllWH/ckkI3hqpJO1uzISlapqmg=
 
 highlight.js@^11.0.1:
   version "11.2.0"
@@ -1295,6 +1331,16 @@ pify@^4.0.1:
   resolved "https://registry.nlark.com/pify/download/pify-4.0.1.tgz#4b2cd25c50d598735c50292224fd8c6df41e3231"
   integrity sha1-SyzSXFDVmHNcUCkiJP2MbfQeMjE=
 
+popmotion@^10.0.1:
+  version "10.0.1"
+  resolved "https://registry.npmmirror.com/popmotion/download/popmotion-10.0.1.tgz#5be5b80112a1386b7f2a11d081a1ea3ca7508d8e"
+  integrity sha1-W+W4ARKhOGt/KhHQgaHqPKdQjY4=
+  dependencies:
+    framesync "6.0.0"
+    hey-listen "^1.0.8"
+    style-value-types "5.0.0"
+    tslib "^2.1.0"
+
 postcss-modules-extract-imports@^3.0.0:
   version "3.0.0"
   resolved "https://registry.nlark.com/postcss-modules-extract-imports/download/postcss-modules-extract-imports-3.0.0.tgz#cda1f047c0ae80c97dbe28c3e76a43b88025741d"
@@ -1657,6 +1703,14 @@ strip-ansi@^6.0.0, strip-ansi@^6.0.1:
   dependencies:
     ansi-regex "^5.0.1"
 
+style-value-types@5.0.0:
+  version "5.0.0"
+  resolved "https://registry.npmmirror.com/style-value-types/download/style-value-types-5.0.0.tgz#76c35f0e579843d523187989da866729411fc8ad"
+  integrity sha1-dsNfDleYQ9UjGHmJ2oZnKUEfyK0=
+  dependencies:
+    hey-listen "^1.0.8"
+    tslib "^2.1.0"
+
 supports-color@^7.1.0:
   version "7.2.0"
   resolved "https://registry.nlark.com/supports-color/download/supports-color-7.2.0.tgz?cache=0&sync_timestamp=1626703400240&other_urls=https%3A%2F%2Fregistry.nlark.com%2Fsupports-color%2Fdownload%2Fsupports-color-7.2.0.tgz#1b7dcdcb32b8138801b3e478ba6a51caa89648da"
@@ -1706,7 +1760,7 @@ tslib@^1.10.0:
   resolved "https://registry.nlark.com/tslib/download/tslib-1.14.1.tgz#cf2d38bdc34a134bcaf1091c41f6619e2f672d00"
   integrity sha1-zy04vcNKE0vK8QkcQfZhni9nLQA=
 
-tslib@^2.0.3:
+tslib@^2.0.3, tslib@^2.1.0:
   version "2.3.1"
   resolved "https://registry.nlark.com/tslib/download/tslib-2.3.1.tgz#e8a335add5ceae51aa261d32a490158ef042ef01"
   integrity sha1-6KM1rdXOrlGqJh0ypJAVjvBC7wE=
@@ -1988,6 +2042,11 @@ vscode-vue-languageservice@^0.27.0:
     vscode-languageserver-textdocument "^1.0.1"
     vscode-pug-languageservice "^0.27.22"
     vscode-typescript-languageservice "^0.27.22"
+
+vue-demi@*:
+  version "0.11.4"
+  resolved "https://registry.nlark.com/vue-demi/download/vue-demi-0.11.4.tgz#6101992fe4724cf5634018a16e953f3052e94e2a"
+  integrity sha1-YQGZL+RyTPVjQBihbpU/MFLpTio=
 
 vue-router@4:
   version "4.0.11"
