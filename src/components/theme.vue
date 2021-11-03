@@ -1,16 +1,20 @@
 <template>
   <div class="theme">
-    <n-switch v-model:value="state.theme" @update:value="handleThemeChange" />
+    <n-switch v-model:value="theme" @update:value="handleThemeChange" />
   </div>
 </template>
 
 <script lang="ts" setup>
+import { computed } from 'vue';
 import { NSwitch } from 'naive-ui';
-import { useStore } from 'vuex';
-const { state, commit } = useStore();
-
+import { useStore } from '../store/index';
+// const { theme, $patch, changeTheme } = useStore();
+const stroe = useStore();
+console.log(stroe)
+const theme = computed(() => stroe.$state.theme);
 const handleThemeChange = (value: boolean) => {
-  commit('changeTheme', value)
+  // $patch({ theme: value });
+  stroe.changeTheme(value);
 }
 </script>
 

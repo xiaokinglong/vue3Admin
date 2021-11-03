@@ -7,21 +7,15 @@
 </template>
 
 <script lang="ts" setup>
-import { useStore } from 'vuex'
 import { computed } from 'vue'
-import { NConfigProvider, darkTheme, NGlobalStyle, } from 'naive-ui';
-
-const { state } = useStore();
+import { NConfigProvider, darkTheme, } from 'naive-ui';
+import { useStore } from './store'
+const store = useStore();
 
 const themes = computed(() => {
 	console.log(12)
-	return state.theme ? darkTheme : null
-	return  darkTheme
+	return store.$state.theme ? darkTheme : null
 })
-console.log(themes)
-// onMounted(() => {
-// 	document.title = state.app;
-// })
 
 </script>
 

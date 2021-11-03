@@ -307,6 +307,11 @@
   resolved "https://registry.nlark.com/@vue/devtools-api/download/@vue/devtools-api-6.0.0-beta.17.tgz#d4b9eb02c670d39a4532f4bb3c8517abce3fcb82"
   integrity sha1-1LnrAsZw05pFMvS7PIUXq84/y4I=
 
+"@vue/devtools-api@^6.0.0-beta.19":
+  version "6.0.0-beta.20"
+  resolved "https://registry.npmmirror.com/@vue/devtools-api/download/@vue/devtools-api-6.0.0-beta.20.tgz?cache=0&sync_timestamp=1635944976169&other_urls=https%3A%2F%2Fregistry.npmmirror.com%2F%40vue%2Fdevtools-api%2Fdownload%2F%40vue%2Fdevtools-api-6.0.0-beta.20.tgz#b5405c9a84fb44687d05e7c4c7854b1639141106"
+  integrity sha1-tUBcmoT7RGh9BefEx4VLFjkUEQY=
+
 "@vue/reactivity@3.2.12", "@vue/reactivity@^3.2.6":
   version "3.2.12"
   resolved "https://registry.nlark.com/@vue/reactivity/download/@vue/reactivity-3.2.12.tgz#b482a737cbdc891f9b1ec3100f3c1804b56d080b"
@@ -1330,6 +1335,14 @@ pify@^4.0.1:
   version "4.0.1"
   resolved "https://registry.nlark.com/pify/download/pify-4.0.1.tgz#4b2cd25c50d598735c50292224fd8c6df41e3231"
   integrity sha1-SyzSXFDVmHNcUCkiJP2MbfQeMjE=
+
+pinia@^2.0.0:
+  version "2.0.0"
+  resolved "https://registry.npmmirror.com/pinia/download/pinia-2.0.0.tgz?cache=0&sync_timestamp=1635489039192&other_urls=https%3A%2F%2Fregistry.npmmirror.com%2Fpinia%2Fdownload%2Fpinia-2.0.0.tgz#6ac77af7a4ff2e2c87a5967b5aa2be8e04868f38"
+  integrity sha1-asd696T/LiyHpZZ7WqK+jgSGjzg=
+  dependencies:
+    "@vue/devtools-api" "^6.0.0-beta.19"
+    vue-demi "*"
 
 popmotion@^10.0.1:
   version "10.0.1"
