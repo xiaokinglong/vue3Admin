@@ -7,6 +7,7 @@
     "serve": "vite preview"
   },
   "dependencies": {
+    "@arco-design/web-vue": "^2.0.3",
     "@vueuse/core": "^6.7.3",
     "@vueuse/motion": "^2.0.0-beta.4",
     "animate.css": "^4.1.1",
